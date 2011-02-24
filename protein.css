@@ -73,7 +73,7 @@ ul {
 
 #add {
   float:right;
-  margin-right: 100px;
+  margin-right: 50px;
   margin-top:8px;
 }
 
@@ -86,6 +86,7 @@ ul {
 }
 #left {
  float:left;
+ margin-top: 30px;
  top:0;
  left:0;
  width:450px;
