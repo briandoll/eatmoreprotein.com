@@ -1,18 +1,20 @@
-<!DOCTYPE html> 
-	<html> 
-	<head> 
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<title>Get your protein!</title>
-		<link rel="stylesheet" href="protein.css" type="text/css" />
 		<link rel="stylesheet" href="jquery-ui-1.8.9.custom.css" type="text/css">
+		<link rel="stylesheet" href="protein.css" type="text/css" />
+		<link rel="stylesheet" href="css3buttons.css" media="screen">
+  	
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-		<script>!window.jQuery && document.write('<script src="http://code.jquery.com/jquery-1.4.2.min.js"><\/script>');</script> 
+		<script>!window.jQuery && document.write('<script src="http://code.jquery.com/jquery-1.4.2.min.js"><\/script>');</script>
 		<script src="jquery-ui-1.8.9.custom.min.js"></script>
 	</head>
 	<body>
-	  <h1>OK, I'm eating Paleo, but how much protein should I be eating?</h1>
-	  <p>Well, tell us a little about yourself:</p>
-	  
+	  <div id="container">
+	  <h1>I eat Paleo, but how much protein do I need every day?</h1>
+	  <p>First, tell us a little about yourself:</p>
 	  <div id="weight">I currently weigh <input type="text" id="bodyweight" class="" value="100"> pounds.</div>
 	  <div id="percentage">I'm aiming to get 
 	    <select id="protein_per_pound_of_bodyweight" class="">
@@ -26,10 +28,12 @@
       <p>Great! You'll need <input type="text" id="protein_goal" value="100"> grams of protein.</p>
       <p>BUT HOW MUCH FOOD IS THAT??!?!?!  Let's find out!</p>
 
-      <div>Let's find out.  Itemize a typical day's protein and see how much food you'll need.</div>
+      <div>Itemize a typical day's protein and see how much food you'll need:</div>
       <div id="congrats">Congrats! This mix of proteins meets your goal.</div>
+      <div id="progressbar"></div>
       <div id="food">
-      <ul><button id="add" >Add a food item</button>
+      <a href="javascript:void(false)" class="button" id="add"><span class="plus icon"></span>Add Food Item</a>
+      <ul>
         <li>
           <input type="text" class="qty" value="">
           <select class="protein_source">
@@ -43,7 +47,7 @@
         </li>
       </ul>
       </div>
-      <div id="progressbar"></div>
 	    <script src="protein.js"></script>
+	    </div>
 	</body>
 	</html>

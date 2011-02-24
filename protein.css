@@ -6,10 +6,23 @@ body {
   padding: 0px;
 }
 
+#container {
+  width:800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 h1 {
   font: 24pt Helvetica, sans-serif;
   color: #000;
-  line-height: 2;
+}
+
+ul {
+  list-style-type: none;
+  width: 60%;
+  padding-left: 0px;
+  padding-top:0px;
+  margin-top: 20px;
 }
 
 #protein_goal {
@@ -18,4 +31,10 @@ h1 {
 
 #bodyweight {
   
+}
+
+#add {
+  float:right;
+  margin-right:50%;
+  margin-top:8px;
 }
