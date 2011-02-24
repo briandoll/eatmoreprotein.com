@@ -1,9 +1,18 @@
 body {
-  font: 18pt Helvetica, sans-serif;
+  font-family: "great-primer-1","great-primer-2", serif;
+  font-size: 18pt;
   color: #333;
+  background-image: url('images/white.birch.jpg');
+  background-repeat: repeat;
   line-height: 1.4;
   margin: 50px 50px 0px;
   padding: 0px;
+}
+
+select {
+  font-family: "great-primer-1","great-primer-2", serif;
+  background-image: url('images/white.birch.jpg');
+  font-size: 20px;
 }
 
 #container {
@@ -13,7 +22,7 @@ body {
 }
 
 h1 {
-  font: 24pt Helvetica, sans-serif;
+  font-size: 24pt;
   color: #000;
 }
 
@@ -25,16 +34,82 @@ ul {
   margin-top: 20px;
 }
 
+#goal {
+  margin-top:20px;
+}
+
+#info {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
 #protein_goal {
   font-weight: bold;
 }
 
-#bodyweight {
-  
+#weight, #percentage {
+  padding-left: 30px;
+}
+
+#percent_complete {
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#bodyweight, #protein_goal, .qty {
+  font-family: "great-primer-1","great-primer-2", serif;
+  background-image: url('images/white.birch.jpg');
+  font-size: 18pt;
+  text-align:right;
+  width: 50px;
+  height: 30px;
+  border: none;
+  border-bottom-color: #000;
+  border-bottom-width: 2px;
+  border-bottom-style: dotted;
+  color: black;
 }
 
 #add {
   float:right;
-  margin-right:50%;
+  margin-right: 100px;
   margin-top:8px;
+}
+
+#right {
+ float:right;
+ top:0;
+ right:0;
+ margin-top: 15px;
+ width:350px;
+}
+#left {
+ float:left;
+ top:0;
+ left:0;
+ width:450px;
+}
+
+#congrats{
+  margin-top:20px;
+}
+
+a {
+  color: #000;
+}
+
+#progressbar {
+  background-image: url('images/white.birch.jpg');
+  border-color: #666;
+  border-width: 1px;
+}
+
+#footer {
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  width: 100%;
+  font-size: 14px;
 }
