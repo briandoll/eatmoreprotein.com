@@ -30,8 +30,7 @@ var progressMessage = function(percentage) {
     msg = "Congrats! This is enough protein for you on a given day.";
   }
   return msg;
-}
-
+};
 
 var updateProgressBar = function() {
   var total_protein_grams = Number(0);
