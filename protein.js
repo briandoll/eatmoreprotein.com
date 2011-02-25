@@ -44,7 +44,7 @@ var updateProgressBar = function() {
   var goal = $("#protein_goal").val();
   var percentage = (total_protein_grams / Number(goal) * 100);
   $("#progressbar").progressbar({ value: percentage });
-  $("#percent_complete").html(percentage + "%");
+  $("#percent_complete").html(Number(percentage).toFixed(0) + "%");
   $("#congrats").html(progressMessage(percentage));
 };
 

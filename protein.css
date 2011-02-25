@@ -100,10 +100,13 @@ a {
   color: #000;
 }
 
+.ui-widget-header {
+ border-width: 0px; 
+}
 #progressbar {
   background-image: url('images/white.birch.jpg');
   border-color: #666;
-  border-width: 1px;
+  border-width: 0px;
 }
 
 #footer {
