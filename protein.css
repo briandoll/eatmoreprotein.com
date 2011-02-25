@@ -59,7 +59,7 @@ ul {
 
 #bodyweight, #protein_goal, .qty {
   font-family: "great-primer-1","great-primer-2", serif;
-  background-image: url('images/white.birch.jpg');
+  background-color: transparent;
   font-size: 18pt;
   text-align:right;
   width: 50px;
@@ -103,10 +103,14 @@ a {
 .ui-widget-header {
  border-width: 0px; 
 }
+
 #progressbar {
-  background-image: url('images/white.birch.jpg');
+  background-color: transparent;
+  background-image: url('');
   border-color: #666;
-  border-width: 0px;
+  -moz-box-shadow: 5px 5px 5px #666;
+  -webkit-box-shadow: 5px 5px 5px #666;
+  box-shadow: 5px 5px 5px #666;
 }
 
 #footer {
