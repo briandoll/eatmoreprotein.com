@@ -1,2 +1,15 @@
 @import url("core/core.css");
 @import url("plugins/plugins.css");
+
+h1 { font-size: 24pt;  color: #000; }
+h3 { color: #000; }
+
+.base {
+  background-image: url('../images/white.birch.jpg');
+  background-repeat: repeat;
+  font-family: "great-primer-1","great-primer-2", serif;
+  font-size: 14pt;
+  color: #333;
+}
+
+.fullWidth { clear:both; width:100%; }

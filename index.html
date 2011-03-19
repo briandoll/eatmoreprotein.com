@@ -9,90 +9,97 @@
 		<script>!window.jQuery && document.write('<script src="http://code.jquery.com/jquery-1.4.2.min.js"><\/script>');</script>
 		<script src="jquery-ui-1.8.9.custom.min.js"></script>
 		<link rel="stylesheet" href="jquery-ui-1.8.9.custom.css" type="text/css">
-		<link rel="stylesheet" href="protein.css" type="text/css" />
 		<link rel="stylesheet" href="css3buttons.css" media="screen">
+		<link rel="stylesheet" href="css/all.css" type="text/css" />
 	</head>
-	<body>
-	  <div id="container">
-	    <h1>I eat Paleo, but how much protein do I need every day?</h1>
+	<body class="base">
+	  <div class="page oldSchool">
+	    <div class="head">
+  	    <h1>I eat Paleo, but how much protein do I need every day?</h1>
+	    </div>
+	    <div class="body">
+        <div class="fullWidth">
+          <div>First, tell us a little about yourself:</div>
+          <div id="weight">My lean body mass is <input type="text" id="bodyweight" value="100"> pounds.</div>
+          <div id="percentage">I'm aiming to get 
+            <select id="protein_per_pound_of_bodyweight" class="">
+              <option value="0.5">0.5</option>
+              <option value="0.75">0.75</option>
+              <option value="1.0" selected>1.0</option>
+              <option value="1.25">1.25</option>
+              <option value="1.5">1.5</option>
+            </select> grams of protein per pound of lean body mass.
+          </div>
+          <div id="goal">Great! You'll need <input type="text" id="protein_goal" value="100"> grams of protein.</div>
+
+          <p>BUT HOW MUCH FOOD IS THAT??!?!?!  Let's find out!</p>
+          <div>Let's add up a typical day's protein to see how much you'll need:</div>
+
+          </div> <!-- .main -->
+
+          <div class="leftCol">
+            <div id="food">
+            <a href="javascript:void(false)" class="button" id="add"><span class="plus icon"></span>Add Protein Source</a>
+            <ul>
+              <li>
+                <input type="text" class="qty" value="">
+                <select class="protein_source">
+                  <option value="6">Egg(s)</option>
+                  <option value="3">slices of Bacon</option>
+                  <option value="7">oz. of Beef</option>
+                  <option value="8">oz. of Chicken</option>
+                  <option value="6">oz. of Fish</option>
+                  <option value="7">oz. of Lamb</option>
+                  <option value="7.25">oz. of Pork</option>
+                  <option value="7">oz. of Shrimp</option>
+                  <option value="8.5">oz. of Turkey</option>
+                </select>
+              </li>
+            </ul>
+            </div>
+          </div>
+
+          <div class="rightCol">
+            <div id="progress">
+              Progress:</br>
+              <div id="percent_complete">0%</div>
+              <div id="progressbar"></div>
+            </div>
+            <div id="congrats"></div>
+          </div>
+
+          <div class="fullWidth">
+            <h3>FAQ</h3>
+            <strong>What about protein powder, dairy, nuts, veggies?</strong></br>
+            In the words of <a href="http://robbwolf.com/"> the man himself, Robb Wolf</a>:<br/>
+            Your protein needs to have the following criteria:
+            <ol>
+              <li>It needs a face.</li>
+              <li>It needs a soul.</li>
+              <li>You need to kill it, and bring its essence into your being.</li>
+            </ol>
+            That is all.
+          </div>
+
+        </div><!-- .body -->
     
-      <div id="info">
-	      <div>First, tell us a little about yourself:</div>
-	      <div id="weight">My lean body mass is <input type="text" id="bodyweight" value="100"> pounds.</div>
-	      <div id="percentage">I'm aiming to get 
-	        <select id="protein_per_pound_of_bodyweight" class="">
-            <option value="0.5">0.5</option>
-            <option value="0.75">0.75</option>
-            <option value="1.0" selected>1.0</option>
-            <option value="1.25">1.25</option>
-            <option value="1.5">1.5</option>
-          </select> grams of protein per pound of lean body mass.
-        </div>
-        <div id="goal">Great! You'll need <input type="text" id="protein_goal" value="100"> grams of protein.</div>
-      </div>
+        <div class="footer">an <a href="http://emphaticsolutions.com">emphatic solution</a> by Brian Doll</div>
 
-      <p>BUT HOW MUCH FOOD IS THAT??!?!?!  Let's find out!</p>
-      <div>Let's add up a typical day's protein to see how much you'll need:</div>
-      <div id="left">
-        <div id="food">
-        <a href="javascript:void(false)" class="button" id="add"><span class="plus icon"></span>Add Protein Source</a>
-        <ul>
-          <li>
-            <input type="text" class="qty" value="">
-            <select class="protein_source">
-              <option value="6">Egg(s)</option>
-              <option value="3">slices of Bacon</option>
-              <option value="7">oz. of Beef</option>
-              <option value="8">oz. of Chicken</option>
-              <option value="6">oz. of Fish</option>
-              <option value="7">oz. of Lamb</option>
-              <option value="7.25">oz. of Pork</option>
-              <option value="7">oz. of Shrimp</option>
-              <option value="8.5">oz. of Turkey</option>
-            </select>
-          </li>
-        </ul>
-        </div>
-      </div>
-      <div id="right">
-        <div id="progress">
-          Progress:</br>
-          <div id="percent_complete">0%</div>
-          <div id="progressbar"></div>
-        </div>
-        <div id="congrats"></div>
-      </div>
+      </div><!-- .page -->
 
-      <div id="faq">
-        <h3>FAQ</h3>
-        <strong>What about protein powder, dairy, nuts, veggies?</strong></br>
-        In the words of <a href="http://robbwolf.com/"> the man himself, Robb Wolf</a>:<br/>
-        Your protein needs to have the following criteria:
-        <ol>
-          <li>It needs a face.</li>
-          <li>It needs a soul.</li>
-          <li>You need to kill it, and bring its essence into your being.</li>
-        </ol>
-        That is all.
-      </div>
+      <script src="protein.js"></script>
+      <script type="text/javascript">
 
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-4937376-11']);
+        _gaq.push(['_trackPageview']);
 
-    </div>
-    
-    <div id="footer">an <a href="http://emphaticsolutions.com">emphatic solution</a> by Brian Doll</div>
-    <script src="protein.js"></script>
-    <script type="text/javascript">
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-4937376-11']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-
-    </script>
+      </script>
 	</body>
 	</html>
