@@ -18,10 +18,10 @@
   	    <h1>I eat Paleo, but how much protein do I need every day?</h1>
 	    </div>
 	    <div class="body">
-        <div class="fullWidth medBreathingRoom">
+        <div class="fullWidth medVertPad doubleSpaced">
           <div>First, tell us a little about yourself:</div>
-          <div id="weight">My lean body mass is <input type="text" id="bodyweight" value="100"> pounds.</div>
-          <div id="percentage">I'm aiming to get 
+          <div>My lean body mass is <input type="text" id="bodyweight" class="dottedInput medHorMargin" value="100"> pounds.</div>
+          <div>I'm aiming to get 
             <select id="protein_per_pound_of_bodyweight" class="transparentSelect">
               <option value="0.5">0.5</option>
               <option value="0.75">0.75</option>
@@ -30,11 +30,13 @@
               <option value="1.5">1.5</option>
             </select> grams of protein per pound of lean body mass.
           </div>
-          <div id="goal">Great! You'll need <input type="text" id="protein_goal" value="100"> grams of protein.</div>
+          <div>
+            Great! You'll need <input type="text" id="protein_goal" class="dottedInput medHorMargin" value="100"> grams of protein.
+          </div>
         </div>
 
-        <div class="fullWidth medBreathingRoom">
-          <p>BUT HOW MUCH FOOD IS THAT??!?!?!  Let's find out!</p>
+        <div class="fullWidth medVertPad">
+          <h3>BUT HOW MUCH FOOD IS THAT??!?!?!  Let's find out!</h3>
           <div>Let's add up a typical day's protein to see how much you'll need:</div>
 
           <div class="leftCol">
@@ -42,8 +44,8 @@
             <a href="javascript:void(false)" class="button" id="add"><span class="plus icon"></span>Add Protein Source</a>
             <ul>
               <li>
-                <input type="text" class="qty" value="">
-                <select class="transparentSelect">
+                <input type="text" class="qty dottedInput medHorMargin" value="">
+                <select class="protein_source transparentSelect">
                   <option value="6">Egg(s)</option>
                   <option value="3">slices of Bacon</option>
                   <option value="7">oz. of Beef</option>
@@ -63,13 +65,13 @@
             <div id="progress">
               Progress:</br>
               <div id="percent_complete">0%</div>
-              <div id="progressbar"></div>
+              <div id="progressbar" class="woodBar"></div>
             </div>
-            <div id="congrats"></div>
+            <div id="congrats" class="medVertPad"></div>
           </div>
         </div>
 
-        <div class="fullWidth medBreathingRoom">
+        <div class="fullWidth medVertPad">
           <h3>FAQ</h3>
           <strong>What about protein powder, dairy, nuts, veggies?</strong></br>
           In the words of <a href="http://robbwolf.com/"> the man himself, Robb Wolf</a>:<br/>
@@ -84,7 +86,7 @@
 
       </div>
 
-      <div class="footer smallText centered medBreathingRoom">an <a href="http://emphaticsolutions.com">emphatic solution</a> by Brian Doll</div>
+      <div class="footer smallText centered medVertPad">an <a href="http://emphaticsolutions.com">emphatic solution</a> by Brian Doll</div>
 
     </div>
 
