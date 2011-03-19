@@ -14,15 +14,15 @@
 	</head>
 	<body class="base">
 	  <div class="page oldSchool">
-	    <div class="head">
+	    <div class="head centered">
   	    <h1>I eat Paleo, but how much protein do I need every day?</h1>
 	    </div>
 	    <div class="body">
-        <div class="fullWidth">
+        <div class="fullWidth medBreathingRoom">
           <div>First, tell us a little about yourself:</div>
           <div id="weight">My lean body mass is <input type="text" id="bodyweight" value="100"> pounds.</div>
           <div id="percentage">I'm aiming to get 
-            <select id="protein_per_pound_of_bodyweight" class="">
+            <select id="protein_per_pound_of_bodyweight" class="transparentSelect">
               <option value="0.5">0.5</option>
               <option value="0.75">0.75</option>
               <option value="1.0" selected>1.0</option>
@@ -31,11 +31,11 @@
             </select> grams of protein per pound of lean body mass.
           </div>
           <div id="goal">Great! You'll need <input type="text" id="protein_goal" value="100"> grams of protein.</div>
+        </div>
 
+        <div class="fullWidth medBreathingRoom">
           <p>BUT HOW MUCH FOOD IS THAT??!?!?!  Let's find out!</p>
           <div>Let's add up a typical day's protein to see how much you'll need:</div>
-
-          </div> <!-- .main -->
 
           <div class="leftCol">
             <div id="food">
@@ -43,7 +43,7 @@
             <ul>
               <li>
                 <input type="text" class="qty" value="">
-                <select class="protein_source">
+                <select class="transparentSelect">
                   <option value="6">Egg(s)</option>
                   <option value="3">slices of Bacon</option>
                   <option value="7">oz. of Beef</option>
@@ -67,39 +67,40 @@
             </div>
             <div id="congrats"></div>
           </div>
+        </div>
 
-          <div class="fullWidth">
-            <h3>FAQ</h3>
-            <strong>What about protein powder, dairy, nuts, veggies?</strong></br>
-            In the words of <a href="http://robbwolf.com/"> the man himself, Robb Wolf</a>:<br/>
-            Your protein needs to have the following criteria:
-            <ol>
-              <li>It needs a face.</li>
-              <li>It needs a soul.</li>
-              <li>You need to kill it, and bring its essence into your being.</li>
-            </ol>
-            That is all.
-          </div>
+        <div class="fullWidth medBreathingRoom">
+          <h3>FAQ</h3>
+          <strong>What about protein powder, dairy, nuts, veggies?</strong></br>
+          In the words of <a href="http://robbwolf.com/"> the man himself, Robb Wolf</a>:<br/>
+          Your protein needs to have the following criteria:
+          <ol>
+            <li>It needs a face.</li>
+            <li>It needs a soul.</li>
+            <li>You need to kill it, and bring its essence into your being.</li>
+          </ol>
+          That is all.
+        </div>
 
-        </div><!-- .body -->
-    
-        <div class="footer">an <a href="http://emphaticsolutions.com">emphatic solution</a> by Brian Doll</div>
+      </div>
 
-      </div><!-- .page -->
+      <div class="footer smallText centered medBreathingRoom">an <a href="http://emphaticsolutions.com">emphatic solution</a> by Brian Doll</div>
 
-      <script src="protein.js"></script>
-      <script type="text/javascript">
+    </div>
 
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-4937376-11']);
-        _gaq.push(['_trackPageview']);
+    <script src="protein.js"></script>
+    <script type="text/javascript">
 
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4937376-11']);
+      _gaq.push(['_trackPageview']);
 
-      </script>
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
 	</body>
 	</html>

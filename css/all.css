@@ -3,6 +3,13 @@
 
 h1 { font-size: 24pt;  color: #000; }
 h3 { color: #000; }
+a { color: #000; text-decoration: underline;}
+a:visited { color: #000;}
+
+.transparentSelect {
+  font-family: "great-primer-1","great-primer-2", serif;
+  background-image: url('../images/white.birch.jpg');
+}
 
 .base {
   background-image: url('../images/white.birch.jpg');
@@ -13,3 +20,6 @@ h3 { color: #000; }
 }
 
 .fullWidth { clear:both; width:100%; }
+.smallText { font-size: 14px; }
+.centered { text-align: center; }
+.medBreathingRoom { padding-top:10px; padding-bottom:10px;}
