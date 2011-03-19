@@ -7,7 +7,7 @@ a { color: #000; text-decoration: underline;}
 a:visited { color: #000;}
 html { background-image: url('../images/white.birch.jpg'); background-repeat: repeat; }
 
-.base {
+.baseType {
   font-family: "great-primer-1","great-primer-2", serif;
   font-size: 14pt;
   color: #333;
