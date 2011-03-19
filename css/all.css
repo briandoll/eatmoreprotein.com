@@ -5,20 +5,17 @@ h1 { font-size: 24pt; color: #000; }
 h3 { font-size: 18pt; color: #000; }
 a { color: #000; text-decoration: underline;}
 a:visited { color: #000;}
-
-.transparentSelect {
-  font-family: "great-primer-1","great-primer-2", serif;
-  background-image: url('../images/white.birch.jpg');
-}
+html { background-image: url('../images/white.birch.jpg'); background-repeat: repeat; }
 
 .base {
-  background-image: url('../images/white.birch.jpg');
-  background-repeat: repeat;
   font-family: "great-primer-1","great-primer-2", serif;
   font-size: 14pt;
   color: #333;
 }
-
+.transparentSelect {
+  font-family: "great-primer-1","great-primer-2", serif;
+  background-image: url('../images/white.birch.jpg');
+}
 .dottedInput {
   background-color: transparent;
   text-align:right;
@@ -30,7 +27,8 @@ a:visited { color: #000;}
   border-bottom-style: dotted;
   color: black;
 }
-
+.ui-widget-header { border-width: 0px; }
+.percentComplete { float: left; margin-top: 10px; margin-left: 10px; }
 .woodBar {
   background-color: transparent;
   background-image: url('');
@@ -39,11 +37,10 @@ a:visited { color: #000;}
   -webkit-box-shadow: 5px 5px 5px #666;
   box-shadow: 5px 5px 5px #666;
 }
-
 .fullWidth { clear:both; width:100%; }
 .smallText { font-size: 14px; }
 .centered { text-align: center; }
 .medVertPad { padding-top:10px; padding-bottom:10px;}
 .medHorMargin { margin-left:10px; margin-right:10px; }
 .doubleSpaced { line-height: 200%; }
-.addFoodButton { margin-left: 90px; margin-top: 20px; margin-bottom: 10px; }
+.addFoodButton { margin-left: 90px; margin-bottom: 10px; }
